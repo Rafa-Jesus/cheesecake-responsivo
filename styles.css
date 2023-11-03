@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body{
+    font-family: 'Source Serif 4', serif;
+    color: #A54328;
+
+    padding: 30px 20px;
+    background: url(images/old-paper-texture-beige-craft-cardboard-vintage-canvas-surface\ 1.png);
+}
+
+.page{
+    max-width: 319px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.recipe img{
+    margin: 46px 0;
+    width: 100%;
+}
+
+h1, h2{
+    font-size: 40px;
+}
+
+h2{
+    margin-bottom: 32px;
+}
+
+ul, ol{
+    padding-left: 24px;
+    margin-bottom: 32px;
+}
+
+button{
+    font-family: 'Source Serif 4', serif;
+    font-size: 14px;
+    line-height: 24px;
+    
+    color: white;
+    background: #A54328;
+    
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+}
+
+button:hover{
+    background: #83351f;
+}
+
+@media (min-width: 1120px){
+
+    body{
+        padding: 95px 149px;
+    }
+
+    .page{
+        flex-direction: row;
+        max-width: fit-content;
+
+        gap: 160px;
+    }
+
+    .recipe{
+        max-width: 435px;
+    }
+
+    .ingredients{
+        max-width: 525px;
+    }
+}
